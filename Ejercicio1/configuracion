@@ -1,0 +1,9 @@
+<VirtualHost www.curso.dev>
+    DocumentRoot "C:\repository\curso"
+    ServerName www.curso.dev
+    <Directory C:\repository\curso>
+        AllowOverride All
+        Require all granted
+        Allow from all
+    </Directory>
+</VirtualHost>
