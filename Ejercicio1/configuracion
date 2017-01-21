@@ -1,3 +1,13 @@
+<VirtualHost *:80>
+  
+	DocumentRoot C:/xampp/htdocs
+   
+	ServerName localhost
+
+</VirtualHost>
+
+
+
 <VirtualHost www.curso.dev>
     DocumentRoot "C:\repository\curso"
     ServerName www.curso.dev
@@ -7,3 +17,5 @@
         Allow from all
     </Directory>
 </VirtualHost>
+
+
