@@ -1,0 +1,40 @@
+*
+{
+	margin:0 auto;
+	background-color: #092241;
+}
+body{
+	margin:0 auto;
+}
+
+header{
+	margin:0 auto;
+	width: 100%;
+	height: 60px;
+	border: 1px white solid;
+}
+
+header nav ul{
+	list-style: none;
+	text-align: right;
+}
+
+header nav ul li {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	display: inline-block;
+	border:1px #E1E6EB solid; 
+	
+	margin: 5px 10px 5px 10px;
+	
+}
+header nav ul li a {
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+}
+
+
+header nav ul li a:hover{
+	background-color:red;
+}
