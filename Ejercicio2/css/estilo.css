@@ -6,11 +6,12 @@ body{
 	margin: 0 auto;
 }
 
+
 header{
 	margin: 0px auto;
 	width: 100%;
 	height: 60px;
-	border: 1px red solid;
+	border: 1px rgb(43, 187, 173)  solid;
 }
 
 
@@ -27,12 +28,67 @@ header nav ul li{
 	margin: 5px 10px 5px 10px;
 }
 header nav ul li a{
+	color: green;
 	text-decoration:none;
-	border:1px #2A2A2A solid;
+	border:none;
 	padding: 10px 10px 10px 10px;
 	
 }
+
 header nav ul li a:hover{
-	background-color: #2A2A2A;
+	/*background-color: rgb(43, 187, 173);*/
+	border-radius:  5px;
+	border-bottom: 4px rgb(43, 187, 173) solid;
+	border-top: 4px rgb(43, 187, 173) solid;
+}
+.logo{
+	content: url(../img/logo.png);
+	position: absolute;
+	width: 5%;
+	border-right: 10px rgb(43, 187, 173) solid;	
+	border-top-right-radius: 10px;
+}
+.logo:hover{	
+	border-right: 20px rgba(43, 187, 173,0.5) solid;	
+
+
 }
 
+.formato{
+	color: rgb(43, 187, 173);
+	font-weight: bold;
+}
+ 
+.subrayado{
+	text-decoration: underline;
+}
+
+.color-rojo{
+	color: red;
+}
+
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
